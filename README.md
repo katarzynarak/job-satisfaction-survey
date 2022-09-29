@@ -1,6 +1,8 @@
-<div position: absolute margin: auto>
+<center>
+  
 # Job Satisfaction Survey
+
 It is a survey form to collect data from users / employees about their job satisfaction.
 
-<img center src="/grafika/result.bmp" alt="The result"/>
-</div>
+<img src="/grafika/result.bmp" alt="The result"/>
+</center>
