@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizjoRak</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <h1 id="title">Job Satisfaction Survey Form</h1>
+    <p id="description">This questionnaire is designed to check the level of employee satisfaction with the work performed.</p>
+    </header>
+    <form id="survey-form">
+      
+    <div class="question">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-element" placeholder="Enter your name" required>
+    </div>
+      
+      <div class="question">
+      <label id="email-label" for="email">Email adress</label>
+      <input type="email" name="email" id="email" class="form-element" placeholder="Enter your email" required>
+    </div>
+      
+      <div class="question">
+      <label id="number-label" for="number">Work experience in years<span class="hint">(optional)</span></label>
+      <input type="number" min="0" max="30" name="experience" id="number" class="form-element" placeholder="Years of work">
+      </div> 
+      
+      <div class="question">
+      <label for="aspect">What do you value most at work?</label>
+      <select id="dropdown" name="aspect" class="form-element" required>
+        <option disapbled selected value>Select the most value aspect of work for you.</option>
+        <option value="salary">Salary</option>
+        <option value="friends">Friends</option>
+        <option value="responsibilities">Responsibilities</option>
+        <option value="office">Office</option>
+        <option value="training">Training</option>
+      </select>
+      </div>
+      
+      <div class="question">
+       <label for="level-satisfaction">How satisfied are you with your work at the moment?<span class="hint">(5 - greatly, 1 - poorly)</span></label>
+        
+          <label><input type="radio" name="level-satisfaction" class="radio" value="5" checked>5</label>
+               
+          <label><input type="radio" name="level-satisfaction" class="radio" value="4">4</label>
+         
+          <label><input type="radio" name="level-satisfaction" class="radio" value="3">3</label>
+         
+          <label><input type="radio" name="level-satisfaction" class="radio" value="2">2</label>
+         
+          <label><input type="radio" name="level-satisfaction" class="radio" value="1">1</label>
+      </div>
+        
+      <div class="question">
+        <label for="changes">Changes in which areas would increase your job satisfaction?</label>
+        
+        <label><input type="checkbox" name="changes" class="checkbox" value="salary-increase">Salary increase</label>
+        
+        <label><input type="checkbox" name="changes" class="checkbox" value="change-of-duties">Change of duties</label>
+        
+           <label><input type="checkbox" name="changes" class="checkbox" value="change-of-team">Change of team</label>
+        
+         <label><input type="checkbox" name="changes" class="checkbox" value="promotion">Promotion</label>
+        
+        <label><input type="checkbox" name="changes" class="checkbox" value="remote-work">Remote work</label>
+     </div>
+      
+      <div class="question">
+        <label for="comments">If you have any additional comments, please tell us here:</label>
+        <textarea class="textarea" name="comments" placeholder="Enter your comments"></textarea>
+      </div>
+      
+      <div class="question">
+        <button type="submit" id="submit" class="submit">SUBMIT</button>
+      </div>
+    </form>
+</body>  

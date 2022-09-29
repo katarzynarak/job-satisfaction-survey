@@ -1,0 +1,111 @@
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: hsl(0, 50%, 100%);
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: hsl(220, 50%, 75%);
+	color: hsl(0, 100%, 100%);
+}
+h1 {
+	font-size: 58px;
+	font-weight: 600;
+}
+@media (max-width: 450px) {
+	h1 {
+		font-size: 24px;
+	}
+}
+p {
+	font-size: 24px;
+	font-style: italic;
+}
+@media (max-width: 450px) {
+	p {
+		font-size: 14px;
+	}
+}
+label {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	margin-bottom: 0.4rem;
+}
+.question {
+	padding: 0.45rem;
+}
+.hint {
+	margin-left: 0.25rem;
+	font-size: 0.8rem;
+}
+.form-element {
+	font-size: 1.2rem;
+	display: block;
+	width: 100%;
+	margin: 0 0 1.5rem 0;
+}
+.radio,
+.checkbox {
+	display: flex;
+	margin: 0 0.5rem 0 0.5rem;
+}
+.textarea {
+	height: 5rem;
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+}
+.submit {
+	width: 10rem;
+	padding: 0.5rem;
+	background-color: hsl(220, 50%, 75%);
+	font-size: 1.2rem;
+	color: hsl(220, 100%, 10%);
+}
+#title {
+	color: hsl(220, 80%, 20%);
+	text-align: center;
+}
+#description {
+	color: hsl(220, 80%, 20%);
+	text-align: center;
+}
+#survey-form {
+	background: hsl(230, 100%, 10%);
+	margin: 2rem;
+	padding: 2rem 2.5rem 2rem 2rem;
+	border-radius: 0.5rem;
+}
